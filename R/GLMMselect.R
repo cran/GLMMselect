@@ -34,7 +34,12 @@ pseudo_likelihood <- function(Y, X, Sigma, Z, family, offset=NULL){
   # offset: num of measurements for each individual (for poisson distribution)
 
   X1 <- cbind(1,X)
-  glmfit <- stats::glm(Y~X, family = family)
+  if(family == "bernoulli"){
+    glmfit <- stats::glm(Y~X, family = "binomial")
+  }else{
+    glmfit <- stats::glm(Y~X, family = family)
+  }
+
   Beta <- glmfit$coefficients
   n <- length(Y)
   n_rf <- length(Sigma)
@@ -270,9 +275,11 @@ FBF <- function(y_star, Xc, inv_v, Zc, Sigmac, prior,b, K){
 #' @export
 GLMMselect <- function(Y, X, Sigma, Z, family, prior, offset=NULL, NumofModel=10, pip_fixed=0.5, pip_random=0.5){
 
+  family <- tolower(family)
   if(sum(family %in% c("poisson","bernoulli")) == 0){
-    stop("family must be either poisson or bernoulli.")
+    stop("Family must be either Poisson or Bernoulli.")
   }
+
 
   if(!is.numeric(Y)){
     stop("Y has to be numeric.")
@@ -312,6 +319,9 @@ GLMMselect <- function(Y, X, Sigma, Z, family, prior, offset=NULL, NumofModel=10
     stop("Z must be numeric.")
   }
 
+  if(family == "bernoulli"){
+    family = "binominal"
+  }
 
   N <- length(Y)
   X1 <- cbind(1,X)

@@ -1,6 +1,6 @@
 Package: GLMMselect
 Title: Bayesian Model Selection for Generalized Linear Mixed Models
-Version: 1.0.0
+Version: 1.1.0
 Authors@R: c(
     person("Shuangshuang", "Xu", email = "xshuangshuang@vt.edu", role = c("aut", "cre")),
     person("Marco", "Ferreira", email = "marf@vt.edu", role = c("aut"),
@@ -21,11 +21,11 @@ VignetteBuilder: knitr
 LazyData: true
 Depends: R (>= 3.5.0)
 NeedsCompilation: no
-Packaged: 2023-04-18 19:05:58 UTC; xushu
+Packaged: 2023-08-23 21:13:53 UTC; xushu
 Author: Shuangshuang Xu [aut, cre],
   Marco Ferreira [aut] (<https://orcid.org/0000-0002-4705-5661>),
   Erica Porter [aut],
   Christopher Franck [aut]
 Maintainer: Shuangshuang Xu <xshuangshuang@vt.edu>
 Repository: CRAN
-Date/Publication: 2023-04-20 08:20:05 UTC
+Date/Publication: 2023-08-23 21:30:06 UTC

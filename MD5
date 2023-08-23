@@ -1,6 +1,6 @@
-225326f7a0a2508ae2b1d1c95bb1b1a5 *DESCRIPTION
+2244a9f6447dcd156f303dc5fdbbed44 *DESCRIPTION
 cb4b7b717794403e5833650c4fc6948c *NAMESPACE
-b51d5b20ffecd916ea9e0cb073835020 *R/GLMMselect.R
+f0f3fc5bf1e6d492cd754309d81ec347 *R/GLMMselect.R
 e3d7aca1540bab264d851a06733326c8 *R/data.R
 2434b34a181060cff3146d27fd0bc6fb *README.md
 88029722f32bff7924f547054e0c5b1b *build/vignette.rds
@@ -13,7 +13,7 @@ fa1783c808e069d820b126daa385cf0c *data/Y.rda
 ceca24e9371f3ad05707b4848223f2af *data/lipcancer_Y.rda
 4eae0c17824344afe28d820ed14e8073 *data/lipcancer_Z.rda
 6b5b6ca0ef91e0808f2d939593d0191c *data/lipcancer_offset.rda
-eafdea02e3fe52adad88a9b6e37eb7d8 *inst/NEWS.Rd
+496e59e51c7a6f350f430a5dc9521807 *inst/NEWS.Rd
 e6fe92203a51e755320fd6861fa18578 *inst/doc/GLMMselect_vignette.R
 b36b955c9d966c673882f1b2ef26b1b6 *inst/doc/GLMMselect_vignette.Rmd
 ceb1da3908790302a5f28d0e14f8ba0e *inst/doc/GLMMselect_vignette.html
